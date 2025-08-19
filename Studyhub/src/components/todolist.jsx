@@ -33,7 +33,7 @@ function TodoList(){
           const newUpdatedTask = add.filter((_, i) => i !== index);
           setAdd(newUpdatedTask);
      }
-
+ 
     return(
         <>
         <h1>StudyHub</h1>
@@ -50,8 +50,7 @@ function TodoList(){
 
         <button className="add-task" onClick={handleTask}>Add</button>
 
-        {/* Unordered list displaying all tasks.
-            Each task is shown with a "Delete" button to remove it. */}
+        {/* unordered list displaying all tasks.*/}  
         <ul>
             {add.map((Add, index) => (
                 <li className="newlist" key={index}>
