@@ -1,4 +1,3 @@
-
 import { useEffect, useRef, useState, createElement } from "react";
 import { gsap } from "gsap";
 import "../components/TextType.css";

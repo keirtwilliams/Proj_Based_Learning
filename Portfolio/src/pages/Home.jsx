@@ -1,5 +1,6 @@
 import TextType from "../components/TextType";
 import SocialIcons from "../components/SocialIcons";
+
 function Home() {
   return (
     <div>
