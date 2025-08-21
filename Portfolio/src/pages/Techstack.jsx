@@ -5,6 +5,7 @@ import cssLogo from "../assets/images/css.svg";
 import viteLogo from "../assets/images/vite.svg";
 import gitLogo from "../assets/images/git.svg";
 import vscodeLogo from "../assets/images/vscode.svg";
+import githubLogo from "../assets/images/github.svg";
 
 const stacks = [
   { name: "React", icon: reactLogo },
@@ -14,6 +15,7 @@ const stacks = [
   { name: "Vite", icon: viteLogo },
   { name: "Git", icon: gitLogo },
   { name: "VS Code", icon: vscodeLogo },
+  { name: "Github", icon: githubLogo}
 ];
 
 function TechStack() {
@@ -37,7 +39,7 @@ function TechStack() {
             />
             <p className="text-base font-semibold">{stack.name}</p>
           </div>
-        ))}a
+        ))}
       </div>
     </section>
   );

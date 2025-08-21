@@ -32,7 +32,7 @@ function SocialIcons() {
       {/* Email Icon */}
       <IconButton
         component="a"
-        href="mailto:keirtwilliamgemperle@gmail.com"
+        href="keirtwilliamgemperle@gmail.com"
         target="_blank"
         rel="noopener noreferrer"
         color="primary"

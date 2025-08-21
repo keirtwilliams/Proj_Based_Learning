@@ -2,19 +2,14 @@ import ProjectCard from "../components/ProjectCard";
 
 const projects = [
   {
-    img: "/logo.png",
-    title: "Project One",
-    text: "This is my first project.",
+    img: "../images/myway.png",
+    title: "MyWay",
+    text: "Find Your Perfect IT Career Path",
     btn: "View More",
     techstack: ["React", "Tailwind", "JavaScript"],
+    link: "https://github.com/keirtwilliams/My_Way",
   },
-  {
-    img: "/logo.png",
-    title: "Project Two",
-    text: "This is my second project.",
-    btn: "View More",
-    techstack: ["HTML", "CSS", "Node.js"],
-  },
+  
 ];
 
 function Projects() {
@@ -29,12 +24,13 @@ function Projects() {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
         {projects.map((project, index) => (
           <ProjectCard
-            key={index}
-            img={project.img}
-            title={project.title}
-            techstack={project.techstack}
-            text={project.text}
-            btn={project.btn}
+           key={index}
+           img={project.img}
+           title={project.title}
+           techstack={project.techstack}
+           text={project.text}
+           btn={project.btn}
+           link={project.link}
           />
         ))}
       </div>
