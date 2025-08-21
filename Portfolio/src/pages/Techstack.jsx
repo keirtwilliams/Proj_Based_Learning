@@ -37,7 +37,7 @@ function TechStack() {
             />
             <p className="text-base font-semibold">{stack.name}</p>
           </div>
-        ))}
+        ))}a
       </div>
     </section>
   );

@@ -4,6 +4,8 @@ import SocialIcons from "../components/SocialIcons";
 function Home() {
   return (
     <div>
+ 
+
       <TextType 
       text={[
      "Hey! Welcome ",
@@ -18,8 +20,7 @@ function Home() {
       />
       
       <SocialIcons />
-          
-    </div>
+       </div>   
   );
 }
 
