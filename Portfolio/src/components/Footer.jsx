@@ -1,57 +1,45 @@
-// Footer.jsx
-import { Box, Container, Typography, IconButton } from "@mui/material";
-import { GitHub, LinkedIn, Email, Description } from "@mui/icons-material";
+import { GitHub, LinkedIn, Email } from "@mui/icons-material";
+import { IconButton } from "@mui/material";
 
 export default function Footer() {
   return (
-    <Box
-      component="footer"
-      sx={{
-        bgcolor: "grey.900",
-        color: "grey.300",
-        py: 3,
-        mt: 5,
-      }}
-    >
-      <Container
-        maxWidth="sm"
-        sx={{ display: "flex", flexDirection: "column", alignItems: "center" }}
-      >
-        {/* Contact Icons */}
-        <Box sx={{ display: "flex", gap: 3, mb: 2 }}>
+    <footer className="bg-gray-100 dark:bg-gray-900 transition-colors duration-300 py-6">
+      <div className="container mx-auto flex flex-col items-center">
+        {/* Social Links */}
+        <div className="flex gap-4 mb-3">
           <IconButton
             component="a"
-            href="mailto:youremail@gmail.com"
+            href="mailto:keirtwilliamgemperle@gmail.com"
             target="_blank"
-            sx={{ color: "grey.300", "&:hover": { color: "white" } }}
+            sx={{ color: "inherit" }}
           >
-            <Email />
+            <Email className="text-gray-700 dark:text-gray-300 hover:text-blue-500 transition-colors" />
           </IconButton>
 
           <IconButton
             component="a"
-            href="https://github.com/yourusername"
+            href="https://github.com/keirtwilliams"
             target="_blank"
-            sx={{ color: "grey.300", "&:hover": { color: "white" } }}
+            sx={{ color: "inherit" }}
           >
-            <GitHub />
+            <GitHub className="text-gray-700 dark:text-gray-300 hover:text-blue-500 transition-colors" />
           </IconButton>
 
           <IconButton
             component="a"
-            href="https://linkedin.com/in/yourusername"
+            href="https://linkedin.com/in/keirt-william-gemperle-ab1028313/"
             target="_blank"
-            sx={{ color: "grey.300", "&:hover": { color: "white" } }}
+            sx={{ color: "inherit" }}
           >
-            <LinkedIn />
+            <LinkedIn className="text-gray-700 dark:text-gray-300 hover:text-blue-500 transition-colors" />
           </IconButton>
-        </Box>
+        </div>
 
-        {/* Small tagline */}
-        <Typography variant="body2" color="grey.500">
+        {/* Tagline */}
+        <p className="text-sm text-gray-600 dark:text-gray-400">
           © {new Date().getFullYear()} Keirt William Gemperle
-        </Typography>
-      </Container>
-    </Box>
+        </p>
+      </div>
+    </footer>
   );
 }

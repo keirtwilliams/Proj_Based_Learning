@@ -6,7 +6,7 @@ import DownloadIcon from "@mui/icons-material/Download";
 
 function SocialIcons() {
   return (
-    <div style={{ display: "flex", gap: "1rem" }}>
+    <div style={{ display: "flex", gap: "1.25rem", alignItems: "center" }}>
       {/* GitHub Icon */}
       <IconButton
         component="a"
@@ -14,8 +14,9 @@ function SocialIcons() {
         target="_blank"
         rel="noopener noreferrer"
         color="primary"
+        sx={{ width: 50, height: 50 }}
       >
-        <GitHubIcon sx={{ fontSize: 30 }} />
+        <GitHubIcon sx={{ fontSize: 36 }} />
       </IconButton>
 
       {/* LinkedIn Icon */}
@@ -25,29 +26,36 @@ function SocialIcons() {
         target="_blank"
         rel="noopener noreferrer"
         color="primary"
+        sx={{ width: 50, height: 50 }}
       >
-        <LinkedInIcon sx={{ fontSize: 30 }} />
+        <LinkedInIcon sx={{ fontSize: 36 }} />
       </IconButton>
 
       {/* Email Icon */}
       <IconButton
         component="a"
-        href="keirtwilliamgemperle@gmail.com"
+        href="mailto:keirtwilliamgemperle@gmail.com"
         target="_blank"
         rel="noopener noreferrer"
         color="primary"
+        sx={{ width: 50, height: 50 }}
       >
-        <EmailIcon sx={{ fontSize: 30 }} />
+        <EmailIcon sx={{ fontSize: 36 }} />
       </IconButton>
 
-      {/* Resume Button (fixed) */}
+      {/* Resume Button */}
       <Button
         variant="contained"
         color="primary"
         href="/resume1.docx"
         download
         startIcon={<DownloadIcon />}
-        sx={{ borderRadius: "20px", textTransform: "none" }}
+        sx={{
+          borderRadius: "25px",
+          textTransform: "none",
+          fontSize: "1rem",
+          padding: "10px 20px",
+        }}
       >
         Resume
       </Button>

@@ -15,31 +15,41 @@ const stacks = [
   { name: "Vite", icon: viteLogo },
   { name: "Git", icon: gitLogo },
   { name: "VS Code", icon: vscodeLogo },
-  { name: "Github", icon: githubLogo}
+  { name: "Github", icon: githubLogo },
 ];
 
 function TechStack() {
   return (
-    <section className="py-16 bg-gray-50">
-      <h2 className="text-3xl font-bold text-center mb-12">
-         Tech Stack & Tools
-      </h2>
+    <section className="bg-gray-50 dark:bg-gray-900 transition-colors duration-300">
+      <div className="min-h-screen py-20">
+        {/* Heading */}
+        <h2 className="text-3xl sm:text-4xl font-extrabold text-center mb-6 text-gray-900 dark:text-white">
+          Tech Stack & Tools
+        </h2>
 
-      {/* Grid layout */}
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8 max-w-5xl mx-auto px-6">
-        {stacks.map((stack) => (
-          <div
-            key={stack.name}
-            className="flex flex-col items-center text-center bg-white shadow-md rounded-xl p-6 hover:shadow-lg hover:scale-105 transition-transform"
-          >
-            <img
-              src={stack.icon}
-              alt={stack.name}
-              className="w-16 h-16 mb-4"
-            />
-            <p className="text-base font-semibold">{stack.name}</p>
-          </div>
-        ))}
+        {/* Divider under heading */}
+        <div className="flex justify-center mb-14">
+          <div className="w-24 h-1 bg-indigo-500 rounded-full"></div>
+        </div>
+
+        {/* Grid layout */}
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 max-w-5xl mx-auto px-6">
+          {stacks.map((stack) => (
+            <div
+              key={stack.name}
+              className="flex flex-col items-center text-center bg-white dark:bg-gray-800 shadow-sm rounded-xl p-6 hover:shadow-lg hover:scale-105 transition-transform duration-200"
+            >
+              <img
+                src={stack.icon}
+                alt={stack.name}
+                className="w-14 h-14 mb-3"
+              />
+              <p className="text-base font-semibold text-gray-800 dark:text-gray-200">
+                {stack.name}
+              </p>
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );
