@@ -1,12 +1,11 @@
-import PomodoroTimer from "./components/PomodoroTimer";
-import TodoList from "./components/todolist";
+import CourseCard from "./components/Coursecard";
 
+ 
 function App() {
 
   return (
     <>
-    <TodoList />
-    <PomodoroTimer />
+    <CourseCard />
     </>
   )
 }
