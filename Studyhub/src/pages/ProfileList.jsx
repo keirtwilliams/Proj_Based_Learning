@@ -1,3 +1,4 @@
+import ProfileCard from "../components/ProfileCard";
 function ProfileList(){
   
     const users = [
@@ -9,7 +10,7 @@ function ProfileList(){
     return(
     <div className="container">
         {users.map((newUsers) => (
-            <ProfileList 
+            <ProfileCard
             key={newUsers.id}
             name={newUsers.name}
             role={newUsers.role}
