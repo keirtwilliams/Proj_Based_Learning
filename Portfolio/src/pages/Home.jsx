@@ -1,12 +1,13 @@
 import TextType from "../components/TextType";
 import SocialIcons from "../components/SocialIcons";
+import keirtImage from "../images/newIMG2.JPG";  
 
 function Home() {
   return (
     <section className="min-h-screen flex items-center bg-white dark:bg-gray-900 px-6 transition-colors duration-300">
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
         
-        {/* Left Side - Text & Icons */}
+        
         <div className="text-center md:text-left space-y-6">
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-gray-900 dark:text-white">
             <TextType
@@ -31,12 +32,11 @@ function Home() {
           </div>
         </div>
 
-        {/* Right Side - Image */}
         <div className="flex justify-center md:justify-end">
           <img
-            src="/me.png" // replace with your actual image file path
+            src={keirtImage}
             alt="Keirt William Gemperle"
-            className="w-56 h-56 md:w-72 md:h-72 object-cover rounded-full shadow-lg border-2 border-gray-300 dark:border-gray-700"
+            className="w-80 h-80 md:w-96 md:h-96 object-cover rounded-full shadow-xl border-4 border-gray-300 dark:border-gray-700"  // Enlarged + enhanced shadow/border
           />
         </div>
       </div>

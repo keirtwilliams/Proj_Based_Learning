@@ -1,11 +1,11 @@
-import reactLogo from "../assets/images/react.svg";
-import jsLogo from "../assets/images/javascript.svg";
-import htmlLogo from "../assets/images/html.svg";
-import cssLogo from "../assets/images/css.svg";
-import viteLogo from "../assets/images/vite.svg";
-import gitLogo from "../assets/images/git.svg";
-import vscodeLogo from "../assets/images/vscode.svg";
-import githubLogo from "../assets/images/github.svg";
+import reactLogo from "../images/react.svg";
+import jsLogo from "../images/javascript.svg";
+import htmlLogo from "../images/html.svg";
+import cssLogo from "../images/css.svg";
+import viteLogo from "../images/vite.svg";
+import gitLogo from "../images/git.svg";
+import vscodeLogo from "../images/vscode.svg";
+import githubLogo from "../images/github.svg";
 
 const stacks = [
   { name: "React", icon: reactLogo },
