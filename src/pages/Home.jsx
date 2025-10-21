@@ -32,7 +32,7 @@ function Home() {
 
         <div className="flex justify-center md:justify-end">
           <img
-            src="/images/Iskor.png"
+            src="/images/keirtwilliam.png"
             alt="Keirt William Gemperle"
             className="w-80 h-80 md:w-96 md:h-96 object-cover rounded-full shadow-xl border-4 border-gray-300 dark:border-gray-700"
           />
