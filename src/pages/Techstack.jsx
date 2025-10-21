@@ -1,22 +1,14 @@
-import reactLogo from "../images/react.svg";
-import jsLogo from "../images/javascript.svg";
-import htmlLogo from "../images/html.svg";
-import cssLogo from "../images/css.svg";
-import viteLogo from "../images/vite.svg";
-import gitLogo from "../images/git.svg";
-import vscodeLogo from "../images/vscode.svg";
-import githubLogo from "../images/github.svg";
-
 const stacks = [
-  { name: "React", icon: reactLogo },
-  { name: "JavaScript", icon: jsLogo },
-  { name: "HTML", icon: htmlLogo },
-  { name: "CSS", icon: cssLogo },
-  { name: "Vite", icon: viteLogo },
-  { name: "Git", icon: gitLogo },
-  { name: "VS Code", icon: vscodeLogo },
-  { name: "Github", icon: githubLogo },
+  { name: "React", icon: "/images/react.svg" },
+  { name: "JavaScript", icon: "/images/javascript.svg" },
+  { name: "HTML", icon: "/images/html.svg" },
+  { name: "CSS", icon: "/images/css.svg" },
+  { name: "Vite", icon: "/images/vite.svg" },
+  { name: "Git", icon: "/images/git.svg" },
+  { name: "VS Code", icon: "/images/vscode.svg" },
+  { name: "Github", icon: "/images/github.svg" },
 ];
+
 
 function TechStack() {
   return (

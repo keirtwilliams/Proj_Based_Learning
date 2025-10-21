@@ -1,9 +1,8 @@
 import ProjectCard from "../components/ProjectCard";
-import myWayImage from "../images/Myway.png";  
-import IskorImage from "../images/Iskor.png";
+
 const projects = [
   {
-    img: myWayImage, 
+    img: "/images/Myway.png", 
     title: "MyWay",
     text: "Find Your Perfect IT Career Path",
     btn: "View More",
@@ -11,7 +10,7 @@ const projects = [
     link: "https://github.com/keirtwilliams/My_Way",
   },
   {
-    img: myWayImage, 
+    img: "/images/Myway.png", 
     title: "Philippine Disaster & Resource Finder",
     text: "Navigate Crises, Find Aid: Your Lifeline in Philippine Disasters",  
     btn: "Soon",
@@ -19,7 +18,7 @@ const projects = [
     link: "", 
   },
   {
-       img: IskorImage, 
+    img: "/images/Iskor.png", 
     title: "Iskor",
     text: "Find Your Perfect IT Career Path",  
     btn: "View More",
@@ -27,6 +26,7 @@ const projects = [
     link: "", 
   }
 ];
+
 
 function Projects() {
   return (
